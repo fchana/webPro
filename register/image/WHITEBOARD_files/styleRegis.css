@@ -1,6 +1,6 @@
 *{
-    /* font-family: 'Mitr', sans-serif;
-    font-family: 'Roboto Mono', monospace; */
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     padding: 0;
     margin: 0;
 }
@@ -20,70 +20,38 @@ body{
     position: relative;
     left: 50px;
     top: 5px;
-    color: #e3e3e3;
+    color: transparent;
     font-size: 60px;
 }
 
 .menubar h1::before{
     content: attr(data-text);
     position: absolute;
-    left: 0px;
     height: 100%;
     width: 100%;
-    color: black;
+    color: whitesmoke;
     text-shadow: 0 0 1px black;
     overflow: hidden;
-    animation: logo 5s linear forwards;
-}
-
-
-@keyframes logo{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 175px;
-    }
+    animation: logo 3s linear;
 }
 
 .footer{
     clear: both;
     position: relative;
     height: 200px;
-    margin-top: 90px;
+    margin-top: 400px;
     box-shadow: 0 0 1px black;
     background-color: #ff1c1c;
 }
 
-.column .black{
-    background-color: black;
+@keyframes logo{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 470px;
+    }
 }
-
-.card{
-    height: 400px;
-}
-
-.card-content .title{
-    height: 303px;
-    padding: 40px;
-    font-size: 28px;
-    background-color: #FAFAFA;
-}
-
-
-.card-content .title:hover{
-    animation: title 10s linear;
-}
-
-form .label, form .button{
-    /* font-size: 24px; */
-}
-
-.card-footer .card-footer-item{
-    background-color: #FAFAFA;
-}
-
-
 
 /* .menubar ul.menuItem {
     list-style: none;
