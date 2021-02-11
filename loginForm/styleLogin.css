@@ -1,13 +1,13 @@
-*{
+* {
     /* font-family: 'Mitr', sans-serif;
     font-family: 'Roboto Mono', monospace; */
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: white;
 }
-
 
 .menubar {
     width: 100%;
@@ -16,7 +16,7 @@ body{
     box-shadow: 0 0 1px black;
 }
 
-.menubar h1{
+.menubar h1 {
     position: relative;
     left: 50px;
     top: 5px;
@@ -24,7 +24,7 @@ body{
     font-size: 60px;
 }
 
-.menubar h1::before{
+.menubar h1::before {
     content: attr(data-text);
     position: absolute;
     left: 0px;
@@ -36,17 +36,16 @@ body{
     animation: logo 5s linear forwards;
 }
 
-
-@keyframes logo{
-    0%{
+@keyframes logo {
+    0% {
         width: 0;
     }
-    100%{
+    100% {
         width: 175px;
     }
 }
 
-.footer{
+.footer {
     clear: both;
     position: relative;
     height: 200px;
@@ -55,34 +54,28 @@ body{
     background-color: #ff1c1c;
 }
 
-.column .black{
+.column .black {
     background-color: black;
 }
 
-.card{
+.card {
     height: 400px;
 }
 
-.card-content .title{
+.card-content .title {
     height: 303px;
     padding: 40px;
     font-size: 28px;
     background-color: #FAFAFA;
 }
 
-
-.card-content .title:hover{
+.card-content .title:hover {
     animation: title 10s linear;
 }
 
-form .label, form .button{
-    /* font-size: 24px; */
-}
-
-.card-footer .card-footer-item{
+.card-footer .card-footer-item {
     background-color: #FAFAFA;
 }
-
 
 
 /* .menubar ul.menuItem {

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEBOARD</title>
+    <link rel="stylesheet" href="./styleMainpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="jsMainpage.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="menubar">
+            <h1 data-text="WHITEBOARD">
+                WHITEBOARD
+            </h1>
+            <div class="profile-wrapper">
+                <div class="card profile-header">
+                    <header class="card-header">
+                        <div class="columns">
+                            <div class="column img">
+                                <img src="../image/user.webp">
+                            </div>
+                            <div class="column id">
+                                <p class="card-header-title">
+                                    62xxxxxx
+                                </p>
+                            </div>
+                        </div>
+                        <button class="card-header-icon" onclick="showProfile()">
+                <span class="icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </button>
+                    </header>
+                </div>
+
+                <div class="card showProfile" style="width: 250px;">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Firstname Lastname</p>
+                                <p class="subtitle is-6">62xxxxxx</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">ติดต่อผู้ดูแล</a>
+                    </footer>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">ออกจากระบบ</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <!-- post -->
+                <div class="columns mt-6">
+                    <div class="column is-one-third">
+                        <div class="menu">
+                            <p class="menu-label">
+                                General
+                            </p>
+                            <ul class="menu-list">
+                                <li><a id="menu-panel" class="is-active" onclick="menuHighlight(this)">Dashboard</a></li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Customers</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                Administration
+                            </p>
+                            <ul class="menu-list">
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Team Settings</a></li>
+                                <li>
+                                    <a id="menu-panel" onclick="menuHighlight(this)">Manage Your Team</a>
+                                    <ul>
+                                        <li><a id="menu-panel" onclick="menuHighlight(this)">Members</a></li>
+                                        <li><a id="menu-panel" onclick="menuHighlight(this)">Plugins</a></li>
+                                        <li><a id="menu-panel" onclick="menuHighlight(this)">Add a member</a></li>
+                                    </ul>
+                                </li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Invitations</a></li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Cloud Storage Environment Settings</a></li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Authentication</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                Transactions
+                            </p>
+                            <ul class="menu-list">
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Payments</a></li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Transfers</a></li>
+                                <li><a id="menu-panel" onclick="menuHighlight(this)">Balance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="comlumns">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-48x48">
+                                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="media-content">
+                                            <p class="title is-4">John Smith</p>
+                                            <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- comment -->
+                            <div class="card-content comment">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">John Smith</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                                <input type="text" class="input">
+
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p class="mt-6">
+                    <strong>WHITEBOARD</strong> by <a href="https://www.it.kmitl.ac.th/th/" target="_blank">IT KMITL.</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -6,46 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHITEBOARD</title>
-    <link rel="stylesheet" href="./styleRegis.css">
+    <link rel="stylesheet" href="./styleLogin.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&family=Roboto+Mono:ital,wght@1,700&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
-
     <div class="menubar">
         <h1 data-text="WHITEBOARD">
             WHITEBOARD
         </h1>
     </div>
     <div>
-        <div class="container" style="margin-top: 150px">
-            <div class="columns">
-                <form id="form" class="column is-two-thirds">
-                    <label class="label">ชื่อผู้ใช้:</label>
-                    <input type="text" class="input" name="fname">
-                    <label class="label mt-2">รหัสผ่าน:</label>
-                    <input type="password" class="input" id="lname">
-                    <br>
-                    <input type="submit" class="button is-submit mt-3" value="เข้าสู่ระบบ">
-                </form>
-                <div class="column">
-                    <div class="card black">
-                        <div class="card-content">
-                            <p class="title has-text-centered">
-                                <b>WHITEBOARD<br><br>PROJECT<br><br>BY<br><br>ITKMITL</b>
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    View on <a href="https://github.com/fchana/webPro" target="_blank">GITHUB</a>
+        <div class="content">
+            <div class="container" style="margin-top: 150px">
+                <div class="columns">
+                    <form id="form" class="column is-two-thirds" action="../mainPage.html/mainPage.html">
+                        <label class="label">ชื่อผู้ใช้:</label>
+                        <input type="text" class="input" name="fname">
+                        <label class="label mt-2">รหัสผ่าน:</label>
+                        <input type="password" class="input" id="lname">
+                        <br>
+                        <input type="submit" class="button is-success is-focused mt-3" value="เข้าสู่ระบบ">
+                    </form>
+                    <div class="column">
+                        <div class="card black ">
+                            <div class="card-content ">
+                                <p class="title has-text-centered ">
+                                    <b>WHITEBOARD<br><br>PROJECT<br><br>BY<br><br>ITKMITL</b>
+                                </p>
+                            </div>
+                            <footer class="card-footer ">
+                                <p class="card-footer-item ">
+                                    <span>
+                                    View on <a href="https://github.com/fchana/webPro " target="_blank ">GITHUB</a>
                                 </span>
-                            </p>
-                        </footer>
+                                </p>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,10 +55,10 @@
     </div>
 
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p class="mt-6">
-                <strong>WHITEBOARD</strong> by <a href="https://www.it.kmitl.ac.th/th/" target="_blank">IT KMITL.</a>
+    <footer class="footer ">
+        <div class="content has-text-centered ">
+            <p class="mt-6 ">
+                <strong>WHITEBOARD</strong> by <a href="https://www.it.kmitl.ac.th/th/ " target="_blank ">IT KMITL.</a>
             </p>
         </div>
     </footer>
