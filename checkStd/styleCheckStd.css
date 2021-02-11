@@ -114,6 +114,35 @@ body {
 }
 
 
+/* check std */
+
+.course_select {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.form-check {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .form-check .control {
+    font-size: 18px;
+}
+
+
+
 /* .menubar .profile {
     position: relative;
     float: right;
