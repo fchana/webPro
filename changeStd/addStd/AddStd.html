@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHITEBOARD</title>
-    <link rel="stylesheet" href="./styleCheckStd.css">
+    <link rel="stylesheet" href="./styleAddStd.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="jsCheckStd.js"></script>
+    <script defer src="jsAddStd.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                     <header class="card-header">
                         <div class="columns">
                             <div class="column img">
-                                <img src="../image/user.webp">
+                                <img src="../../image/user.webp">
                             </div>
                             <div class="column id">
                                 <p class="card-header-title">
@@ -68,7 +68,7 @@
                         <a href="#" class="card-footer-item">ติดต่อผู้ดูแล</a>
                     </footer>
                     <footer class="card-footer">
-                        <a href="../loginForm/loginForm.html" class="card-footer-item">ออกจากระบบ</a>
+                        <a href="../../loginForm/loginForm.html" class="card-footer-item">ออกจากระบบ</a>
                     </footer>
                 </div>
             </div>
@@ -84,38 +84,28 @@
                                 ทั่วไป
                             </p>
                             <ul class="menu-list">
-                                <li><a id="menu-panel" href="../mainPage.html/mainPage.html">หน้าหลัก</a></li>
-                                <li><a id="menu-panel">Customers</a></li>
+                                <li><a href="../../mainPage.html/mainPage.html">หน้าหลัก</a></li>
                             </ul>
                             <p class="menu-label">
-                                Administration
+                                วิชาทั้งหมดของฉัน
                             </p>
                             <ul class="menu-list">
-                                <li><a id="menu-panel">Team Settings</a></li>
-                                <li>
-                                    <a id="menu-panel">Manage Your Team</a>
-                                    <ul>
-                                        <li><a id="menu-panel">Members</a></li>
-                                        <li><a id="menu-panel">Plugins</a></li>
-                                        <li><a id="menu-panel">Add a member</a></li>
-                                    </ul>
-                                </li>
-                                <li><a id="menu-panel">Invitations</a></li>
-                                <li><a id="menu-panel">Cloud Storage Environment Settings</a></li>
-                                <li><a id="menu-panel">Authentication</a></li>
+                                <li><a>วิชาที่ 1</a></li>
+                                <li><a>วิชาที่ 2</a></li>
+                                <li><a>วิชาที่ 3</a></li>
+                                <li><a>วิชาที่ 4</a></li>
                             </ul>
                             <p class="menu-label">
                                 ส่วนผู้ดูแล
                             </p>
                             <ul class="menu-list">
-                                <li><a id="menu-panel" href="../checkStd/CheckStd.html" class="is-active">เช็คชื่อนักศึกษา</a></li>
-                                <li><a id="menu-panel">Transfers</a></li>
-                                <li><a id="menu-panel">Balance</a></li>
+                                <li><a href="../checkStd/CheckStd.html">เช็คชื่อนักศึกษา</a></li>
+                                <li><a href="../removeStd/removeStd.html">ลบนักศึกษา</a></li>
+                                <li><a class="is-active">เพิ่มนักศึกษา</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- select course-->
                     <div class="column">
                         <div class="columns">
                             <!-- std list -->
@@ -126,57 +116,49 @@
                                         <th>รหัสนักศึกษา</th>
                                         <th>ชื่อจริง</th>
                                         <th>นามสกุล</th>
-                                        <th>มา / ขาด</th>
-                                        <th>หมายเหตุ</th>
                                     </tr>
                                     <tr>
                                         <td>01</td>
                                         <td>62xxxxxx</td>
                                         <td>นาย ทดสอบ</td>
                                         <td>ทดสอบ</td>
-                                        <td><input type="checkbox" class="checkbox" name="checkStd"></td>
-                                        <td><input type="text" class="input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="input" placeholder="ลำดับที่" style="width:40%;"></td>
+                                        <td><input type="text" class="input" placeholder="รหัสนักศึกษา" style="width:55%;"></td>
+                                        <td><input type="text" class="input" placeholder="ชื่อจริง" style="width:50%;"></td>
+                                        <td><input type="text" class="input" placeholder="นามสกุล" style="width:50%;"></td>
+                                        <td><input type="button" class="button is-success" value="เพิ่ม"></td>
                                     </tr>
                                 </table>
                         </div>
                         <div class="columns">
-                            <!-- check_all & check button -->
-                            <div class="column is-one-fifth center">
-                                <input type="button" value="เช็คทั้งหมด" class="button is-success ml-6" onclick="check_all()">
+                            <!-- select course-->
+                            <div class="select course_select center">
+                                <select class="course_select">
+                                    <option value="0">Web Technology</option>
+                                    <option value="1">Probability statistics</option>
+                                </select>
                             </div>
-                            <div class="column is-three-fifths">
-                                <div class="columns">
-                                    <div class="select course_select center">
-                                        <select class="course_select">
-                                            <option value="0">Web Technology</option>
-                                            <option value="1">Probability statistics</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="columns">
-                                    <!-- select section -->
-                                    <div class="control mt-4 center">
-                                        <label class="radio">
+                        </div>
+                        <div class="columns">
+                            <!-- select section -->
+                            <div class="control mt-4 center">
+                                <label class="radio">
                                 <input type="radio" name="sec" value="1" checked>
                                 Section 1
                                 </label>
-                                        <label class="radio">
+                                <label class="radio">
                                 <input type="radio" name="sec" value="2">
                                 Section 2
                                 </label>
-                                        <label class="radio">
+                                <label class="radio">
                                 <input type="radio" name="sec" value="3">
                                 Section 3
                                     </label>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="column">
-                                <input type="submit" value="เช็ค" class="button is-success center">
-                            </div>
-                            </form>
                         </div>
-
+                        </form>
                     </div>
                 </div>
             </div>

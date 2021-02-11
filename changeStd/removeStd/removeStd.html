@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHITEBOARD</title>
-    <link rel="stylesheet" href="./styleMainpage.css">
+    <link rel="stylesheet" href="./styleRemoveStd.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="jsMainpage.js"></script>
+    <script defer src="jsRemoveStd.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                     <header class="card-header">
                         <div class="columns">
                             <div class="column img">
-                                <img src="../image/user.webp">
+                                <img src="../../image/user.webp">
                             </div>
                             <div class="column id">
                                 <p class="card-header-title">
@@ -68,7 +68,7 @@
                         <a href="#" class="card-footer-item">ติดต่อผู้ดูแล</a>
                     </footer>
                     <footer class="card-footer">
-                        <a href="../loginForm/loginForm.html" class="card-footer-item">ออกจากระบบ</a>
+                        <a href="../../loginForm/loginForm.html" class="card-footer-item">ออกจากระบบ</a>
                     </footer>
                 </div>
             </div>
@@ -84,80 +84,77 @@
                                 ทั่วไป
                             </p>
                             <ul class="menu-list">
-                                <li><a id="menu-panel" href="./mainPage.html" class="is-active">หน้าหลัก</a></li>
+                                <li><a href="../../mainPage.html/mainPage.html">หน้าหลัก</a></li>
                             </ul>
                             <p class="menu-label">
                                 วิชาทั้งหมดของฉัน
                             </p>
                             <ul class="menu-list">
-                                <li><a id="menu-panel">วิชาที่ 1</a></li>
-                                <li><a id="menu-panel">วิชาที่ 2</a></li>
-                                <li><a id="menu-panel">วิชาที่ 3</a></li>
-                                <li><a id="menu-panel">วิชาที่ 4</a></li>
+                                <li><a>วิชาที่ 1</a></li>
+                                <li><a>วิชาที่ 2</a></li>
+                                <li><a>วิชาที่ 3</a></li>
+                                <li><a>วิชาที่ 4</a></li>
                             </ul>
                             <p class="menu-label">
                                 ส่วนผู้ดูแล
                             </p>
                             <ul class="menu-list">
-                                <li><a href="../changeStd/checkStd/checkStd.html">เช็คชื่อนักศึกษา</a></li>
-                                <li><a href="../changeStd/removeStd/removeStd.html">ลบชื่อนักศึกษา</a></li>
-                                <li><a href="../changeStd/AddStd/AddStd.html">เพิ่มชื่อนักศึกษา</a></li>
+                                <li><a href="../checkStd/CheckStd.html">เช็คชื่อนักศึกษา</a></li>
+                                <li><a class="is-active">ลบนักศึกษา</a></li>
+                                <li><a href="../addStd/AddStd.html">เพิ่มนักศึกษา</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="column">
-                        <!-- post -->
-                        <div class="comlumns">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-48x48">
-                                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-4">John Smith</p>
-                                            <p class="subtitle is-6">@johnsmith</p>
-                                        </div>
-                                    </div>
 
-                                    <div class="content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                        <a href="#">#css</a> <a href="#">#responsive</a>
-                                        <br>
-                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- comment -->
-                            <div class="card-content comment">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">John Smith</p>
-                                        <p class="subtitle is-6">@johnsmith</p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                    <a href="#">#css</a> <a href="#">#responsive</a>
-                                    <br>
-                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                </div>
-                                <input type="text" class="input">
-                                </input>
+                    <div class="column">
+                        <div class="columns">
+                            <!-- std list -->
+                            <form class="form-check center">
+                                <table class="table tcenter">
+                                    <tr>
+                                        <th>ลำดับที่</th>
+                                        <th>รหัสนักศึกษา</th>
+                                        <th>ชื่อจริง</th>
+                                        <th>นามสกุล</th>
+                                        <th>ลบ</th>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>62xxxxxx</td>
+                                        <td>นาย ทดสอบ</td>
+                                        <td>ทดสอบ</td>
+                                        <td><input type="button" class="button is-danger" name="deleteButton" value="ลบ"></td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="columns">
+                            <!-- select course-->
+                            <div class="select course_select center">
+                                <select class="course_select">
+                                            <option value="0">Web Technology</option>
+                                            <option value="1">Probability statistics</option>
+                                        </select>
                             </div>
                         </div>
+                        <div class="columns">
+                            <!-- select section -->
+                            <div class="control mt-4 center">
+                                <label class="radio">
+                                <input type="radio" name="sec" value="1" checked>
+                                Section 1
+                                </label>
+                                <label class="radio">
+                                <input type="radio" name="sec" value="2">
+                                Section 2
+                                </label>
+                                <label class="radio">
+                                <input type="radio" name="sec" value="3">
+                                Section 3
+                                    </label>
+                            </div>
+                        </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
