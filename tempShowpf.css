@@ -1,0 +1,10 @@
+.card.showProfile{
+    position: absolute;
+    z-index: 1;
+}
+
+.showProfile {  
+    left: 9px;
+    margin-bottom: 0px;
+    display: none;
+}
